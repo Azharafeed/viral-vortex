@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Services | Viral Vortex</title>
+    
+    <!-- Importing Stylish Fonts from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="/stylesheets/digital.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="logo">Viral Vortex</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="page3">
+        <div class="content-container">
+            <p>Welcome to our Photo Services section. We specialize in various photography services, including:</p>
+            
+            <!-- Photo Services in a Single Line -->
+            <div class="services-container" id="services">
+                <ul class="services-list">
+                    <li>Event Photography</li>
+                    <li>Product Photography</li>
+                    <li>Portrait Photography</li>
+                    <li>Commercial Photography</li>
+                    <li>Wedding Photography</li>
+                </ul>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="why-choose-us" id="why-choose-us">
+                <h2>Why Choose Us?</h2>
+                <p>At Viral Vortex, our passion for photography sets us apart. Here's why you should choose us:</p>
+                <ul>
+                    <li>Creative Expertise: Our photographers are trained to capture moments beautifully and creatively.</li>
+                    <li>High-Quality Equipment: We use the latest technology to ensure stunning images every time.</li>
+                    <li>Personalized Service: We work closely with you to understand your vision and needs.</li>
+                    <li>Timely Delivery: We guarantee quick turnaround times without compromising quality.</li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Button -->
+            <div class="contact-section" id="contact">
+                <p>Ready to book your photography session? Let’s get started!</p>
+                <hr>
+                <br>
+                <a href="/contact" class="contact-btn">Contact Us</a>
+                <br>
+                <br>
+                <hr>
+            </div>
+
+            <p>Contact us today to capture your special moments!</p>
+        </div>
+    </div>
+
+    <!-- Scroll Effect Script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>

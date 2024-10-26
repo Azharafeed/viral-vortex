@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Services | Viral Vortex</title>
+
+    <!-- Importing Fonts from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="/stylesheets/digital.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="logo">Viral Vortex</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="page3">
+        <div class="content-container">
+            <p>Welcome to our Video Services section. We provide professional services such as:</p>
+            
+            <!-- Video Services in a Single Line -->
+            <div class="services-container" id="services">
+                <ul class="services-list">
+                    <li>Corporate Videos</li>
+                    <li>Event Coverage</li>
+                    <li>Commercial Ads</li>
+                    <li>Social Media Videos</li>
+                    <li>Documentaries</li>
+                </ul>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="why-choose-us" id="why-choose-us">
+                <h2>Why Choose Us?</h2>
+                <p>At Viral Vortex, we know how to capture the essence of your brand in a dynamic way. Here's why we're your best choice:</p>
+                <ul>
+                    <li>Creative Storytelling: We craft compelling narratives that resonate with your audience.</li>
+                    <li>Cutting-Edge Technology: We use the latest equipment for high-definition, cinematic-quality videos.</li>
+                    <li>Customized Video Solutions: Every video is tailored to meet your unique marketing goals.</li>
+                    <li>End-to-End Services: From pre-production to post-production, we handle everything.</li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Button -->
+            <div class="contact-section" id="contact">
+                <p>Need captivating videos for your business? Let's make it happen!</p>
+                <hr>
+                <br>
+                <a href="/contact" class="contact-btn">Contact Us</a>
+                <br>
+                <br>
+                <hr>
+            </div>
+            <br>
+            <p>Contact us today to bring your vision to life through powerful video content!</p>
+        </div>
+    </div>
+
+    <!-- Scroll Effect Script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>

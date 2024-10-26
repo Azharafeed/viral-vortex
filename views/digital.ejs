@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing | Viral Vortex</title>
+    
+    <!-- Importing Stylish Fonts from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="/stylesheets/digital.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="logo">Viral Vortex</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+               
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="page3">
+        <div class="content-container">
+            <p>Welcome to our Digital Marketing section. We offer comprehensive services such as:</p>
+            
+            <!-- Digital Marketing Services in a Single Line -->
+            <div class="services-container" id="services">
+                <ul class="services-list">
+                    <li>SEO (Search Engine Optimization)</li>
+                    <li>PPC (Pay Per Click) Advertising</li>
+                    <li>Social Media Marketing</li>
+                    
+                    <li>Content Creation & Strategy</li>
+                </ul>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="why-choose-us" id="why-choose-us">
+                <h2>Why Choose Us?</h2>
+                <p>At Viral Vortex, we are more than just a digital marketing agency. Here's what sets us apart:</p>
+                <ul>
+                    <li>Data-Driven Results: We use advanced analytics to measure every aspect of your campaign and optimize performance.</li>
+                    <li>Customized Strategies: Our approach is tailored to your business needs and goals, ensuring personalized results.</li>
+                    <li>Industry Expertise: With experience across multiple industries, we provide the most up-to-date marketing solutions.</li>
+                    <li>Innovative Techniques: We constantly innovate, staying ahead of digital marketing trends to give you a competitive edge.</li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Button -->
+            <div class="contact-section" id="contact">
+                <p>Want to take your business to the next level? Let's talk!</p>
+                <hr>
+                <br>
+                <a href="/contact" class="contact-btn">Contact Us</a>
+                <br>
+                <br>
+                <hr>
+            </div>
+<br>
+            <p>Contact us today to boost your business's digital presence!</p>
+        </div>
+    </div>
+
+    <!-- Scroll Effect Script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>

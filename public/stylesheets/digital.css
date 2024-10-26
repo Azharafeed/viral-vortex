@@ -1,0 +1,199 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0d5835, #093224);  /* Enhanced gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.content-container {
+  max-width: 1000px;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* New Funky Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(13, 88, 53, 0.85);
+  padding: 15px 0;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #0d5835;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 25px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f5e41b;
+  transform: scale(1.1);
+}
+
+/* Services in a Single Line */
+.services-container {
+  margin: 100px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.services-list {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.services-list li {
+  font-size: 22px;
+  line-height: 32px;
+  color: #f5e41b;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;  /* Cursor change for better UX */
+}
+
+.services-list li:hover {
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(245, 228, 27, 0.8);
+  transform: translateY(-5px);  /* Lift effect */
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  margin-top: 50px;
+}
+
+.why-choose-us h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.why-choose-us ul {
+  list-style: none;  /* Remove bullet points */
+}
+
+.why-choose-us ul li {
+  font-size: 22px;
+  line-height: 40px;
+  margin: 20px 0;
+  background: rgba(245, 228, 27, 0.1);  /* Light background for emphasis */
+  padding: 10px;
+  border-radius: 10px;  /* Rounded corners */
+  transition: transform 0.3s ease;  /* Add hover effect */
+}
+
+.why-choose-us ul li:hover {
+  transform: translateY(-3px);  /* Lift effect */
+}
+
+/* Contact Section */
+.contact-section {
+  margin-top: 60px;
+}
+
+.contact-section p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.contact-btn {
+  padding: 12px 25px;
+  font-size: 20px;
+  background: linear-gradient(135deg, #f5e41b, #d4c415);
+  color: #0d5835;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  position: relative;  /* For position context */
+}
+
+.contact-btn:hover {
+  background: linear-gradient(135deg, #d4c415, #f5e41b);
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Add some fun effects */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.contact-btn:hover {
+  animation: pulse 0.6s ease-in-out;  /* Pulsing effect */
+}

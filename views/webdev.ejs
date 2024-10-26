@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Services | Viral Vortex</title>
+    
+    <!-- Importing Stylish Fonts from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="/stylesheets/digital.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="logo">Viral Vortex</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="page3">
+        <div class="content-container">
+            <p>Welcome to our Web Services section. We offer a range of web solutions tailored to your needs, including:</p>
+            
+            <!-- Web Services in a Single Line -->
+            <div class="services-container" id="services">
+                <ul class="services-list">
+                    <li>Website Design & Development</li>
+                    <li>E-commerce Solutions</li>
+                    <li>Content Management Systems</li>
+                    <li>Web Hosting Services</li>
+                    <li>Website Maintenance</li>
+                </ul>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="why-choose-us" id="why-choose-us">
+                <h2>Why Choose Us?</h2>
+                <p>At Viral Vortex, we are committed to delivering exceptional web services. Here’s why you should partner with us:</p>
+                <ul>
+                    <li>User-Centric Design: Our designs prioritize user experience to ensure maximum engagement.</li>
+                    <li>Responsive & Adaptive: We ensure your website looks great on all devices and screen sizes.</li>
+                    <li>SEO Optimized: Our websites are built with SEO best practices to help you rank better in search results.</li>
+                    <li>Support & Maintenance: We offer ongoing support to keep your website up-to-date and running smoothly.</li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Button -->
+            <div class="contact-section" id="contact">
+                <p>Looking to enhance your online presence? Let's discuss your project!</p>
+                <hr>
+                <br>
+                <a href="/contact" class="contact-btn">Contact Us</a>
+                <br>
+                <br>
+                <hr>
+            </div>
+
+            <p>Contact us today for reliable web services that meet your business needs!</p>
+        </div>
+    </div>
+
+    <!-- Scroll Effect Script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
